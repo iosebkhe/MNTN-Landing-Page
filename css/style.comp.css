@@ -156,6 +156,15 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@supports (
+  background-image: -webkit-image-set(url("../img/hero-big.webp") 1x)
+) {
+  .hero {
+    background-image: -webkit-image-set(url("../img/hero-big.webp") 1x);
+  }
+}
+
 .hero__social {
   display: flex;
   flex-direction: column;
